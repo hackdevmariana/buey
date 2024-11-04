@@ -9,8 +9,11 @@ export default defineNuxtConfig({
   ],
   modules: ["@nuxt/ui", "@nuxt/image", 'nuxt-parallax', 'nuxt-aos'],
 
-
+  experimental: {
+    renderJsonPayloads: false
+    }
 
   
 
 })
+
