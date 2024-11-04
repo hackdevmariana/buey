@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/league-spartan');
+
+
+:root {
+  --font-primary: 'Poppins', serif;
+  --font-secondary: 'Lato', sans-serif;
+  --font-slider: 'League Spartan', sans-serif;
+  --font-typewriter: var(--font-secondary);
+
+  --color-primary: #0c2f74;
+  --color-primary-rgb: 12, 47, 116;
+  --color-secondary: #009ace;
+  --color-secondary-rgb: 0, 154, 206;
+  --color-tertiary: #fd5454;
+  --color-tertiary-rbg: 253, 84, 84;
+  --color-dark-primary: #191c21;
+  --color-dark-primary-rgb: 25, 28, 33;
+  --color-dark-secondary: #282c34;
+  --color-dark-secondary-rgb: 40, 44, 52;
+  --color-dark-tertiary: #1b1d23;
+  --color-dark-tertiary-rgb: 27, 29, 35;
+  --color-light-primary: #efe2df;
+  --color-light-primary-rgb: 239, 226, 223;
+  --color-light-secondary: #ccd1db;
+  --color-light-secondary-rgb: 204, 209, 219;
+  --color-light-tertiary: #bdc0c7;
+  --color-light-tertiary-rgb: 189, 192, 199;
+
+
+  --color-light-theme: #f7f7f7;
+  --color-dark-theme: #0f0f0f;
+
+  --color-border: #414141;
+  
+  --color-sun: #ffa500;
+  --color-danger: #fd5454;
+  --color-danger-rbg: 253, 84, 84;
+  --color-success: #1d752a;
+  --color-success-rbg: 29, 117, 42;
+
+  --color-pastel-red: #ff8f71;
+  --color-pastel-green: #71ff92;
+  --color-pastel-blue: #71b8ff;
+  --color-pastel-yellow: #edf7ac;
+  --color-pastel-orange: #ffca8c;
+
+  --color-twitter-rgb: 15, 15, 15;
+  --color-facebook-rgb: 24, 119, 242;
+  --color-instagram-rgb: 195, 42, 163;
+  --color-linkedin-rgb: 0, 119, 181;
+  --color-tiktok-rgb: 15, 15, 15;
+  --color-youtube-rgb: 255, 0, 0;
+  --color-whatsapp-rgb: 37, 211, 102;
+  --color-snapchat-rgb: 255, 252, 0;
+  --color-wechat-rgb: 123, 179, 46;
+  --color-pinterest-rgb: 230, 0, 35;
+  --color-telegram-rgb: 0, 136, 204;
+  --color-twitch-rgb: 100, 65, 164;
+  --color-vk-rgb: 76, 117, 163;
+
+  --color-bg-button: #8b3bd6;
+  --color-text-button: #0f0f0f;
+
+
+  --footer-height: 3rem;
+  --left-separation: 2rem;
+}
+

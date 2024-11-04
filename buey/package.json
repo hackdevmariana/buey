@@ -4,14 +4,30 @@
   "type": "module",
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "nuxt dev --port 8001",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "nuxt": "^3.13.2",
-    "vue": "latest",
-    "vue-router": "latest"
+    "@damilaredev/apexcharts-nuxt": "^0.0.8",
+    "@nuxt/image": "npm:@nuxt/image-nightly@latest",
+    "@nuxt/ui": "^2.15.2",
+    "apexcharts": "^3.48.0",
+    "bootstrap": "^5.3.3",
+    "hyphen": "^1.10.4",
+    "lml-lorca-nlp": "^1.0.15",
+    "lorca-nlp": "^1.0.12",
+    "nuxt": "^3.11.2",
+    "pluralize-es": "^1.0.0",
+    "rimador": "^1.2.0",
+    "silabas": "^1.0.3",
+    "syllable": "^5.0.1",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "nuxt-aos": "^1.2.4",
+    "nuxt-parallax": "^1.0.8"
   }
 }
