@@ -42,6 +42,25 @@
           color_1="#6a11cb"
           color_2="#2575fc"
         />
+
+        <CardHighlightedEdge
+  text="Learn more about Nuxt 3" 
+  link="https://nuxt.com" 
+  titleLink="Nuxt 3 Website" 
+  image="https://raw.githubusercontent.com/hackdevmariana/works-images/refs/heads/master/logo_buey.jpeg" 
+  alt="Nuxt Logo" 
+  background="#e3f2fd" 
+  borderColor="#ccc" 
+  borderColorHover="#1976d2" 
+  borderSize="4px" 
+/>
+
+<CardIconTitleText 
+iconName="bitcoin-icons:bitcoin-circle-filled" 
+    title="Bitcoin Icon" 
+    text="This icon represents Bitcoin."
+  />
+
       </ul>
     </div>
   </div>
