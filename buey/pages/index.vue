@@ -90,7 +90,7 @@
     </li>
     <li class="my-3 col-12 col-md-6">
       <NuxtLink to="/poster" class="link-item text-start">
-        <i class="bi bi-list-ul me-2 text-dark"></i> Mostar poster
+        <i class="bi bi-list-ul me-2 text-dark"></i> Mostrar poster
       </NuxtLink>
     </li>
     <li class="my-3 col-12 col-md-6">
