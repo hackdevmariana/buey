@@ -15,100 +15,121 @@
   </div>
 
   <!-- Listado mejorado con marcos, efectos hover y diseño responsivo -->
-  <ul class="list-unstyled text-center d-flex flex-wrap justify-content-center">
-    <li class="my-3 col-12 col-md-6">
-      <NuxtLink to="/funcionan" class="link-item text-start">
+  <ul class="menu-list text-center d-flex flex-wrap justify-content-center">
+    <li class="col-6 col-md-3 my-2 mx-2">
+      <NuxtLink to="/interactions" class="link-item text-start">
         <i class="bi bi-gear-fill me-2 text-primary"></i> Componentes con interacción
       </NuxtLink>
     </li>
-    <li class="my-3 col-12 col-md-6">
+    
+    <li class="col-6 col-md-3 my-2 mx-2">
       <NuxtLink to="/emojis" class="link-item text-start">
-        <i class="bi bi-emoji-smile-fill me-2 text-warning"></i> Todos los emojis
+        <i class="bi bi-emoji-smile-fill me-2 text-warning"></i> Emojis
       </NuxtLink>
     </li>
-    <li class="my-3 col-12 col-md-6">
-      <NuxtLink to="/letreros" class="link-item text-start">
+    <li class="col-6 col-md-3 my-2 mx-2">
+      <NuxtLink to="/effectsletters" class="link-item text-start">
         <i class="bi bi-type me-2 text-success"></i> Efectos con letras
       </NuxtLink>
     </li>
-    <li class="my-3 col-12 col-md-6">
+    <li class="col-6 col-md-3 my-2 mx-2">
       <NuxtLink to="/calltoactions" class="link-item text-start">
         <i class="bi bi-megaphone-fill me-2 text-danger"></i> Llamadas a la acción
       </NuxtLink>
     </li>
-    <li class="my-3 col-12 col-md-6">
+    <li class="col-6 col-md-3 my-2 mx-2">
       <NuxtLink to="/gridsystem" class="link-item text-start">
         <i class="bi bi-grid-3x3-gap-fill me-2 text-info"></i> Tipos de grids
       </NuxtLink>
     </li>
-    <li class="my-3 col-12 col-md-6">
+    <li class="col-6 col-md-3 my-2 mx-2">
       <NuxtLink to="/images" class="link-item text-start">
         <i class="bi bi-image-fill me-2 text-secondary"></i> Efectos sobre imágenes
       </NuxtLink>
     </li>
-    <li class="my-3 col-12 col-md-6">
+    <li class="col-6 col-md-3 my-2 mx-2">
       <NuxtLink to="/lists" class="link-item text-start">
         <i class="bi bi-list-ul me-2 text-dark"></i> Listados
       </NuxtLink>
     </li>
-    <li class="my-3 col-12 col-md-6">
+    <li class="col-6 col-md-3 my-2 mx-2">
       <NuxtLink to="/banner" class="link-item text-start">
         <i class="bi bi-list-ul me-2 text-dark"></i> Banners
       </NuxtLink>
     </li>
+    <li class="col-6 col-md-3 my-2 mx-2">
+      <NuxtLink to="/users" class="link-item text-start">
+        <i class="bi bi-list-ul me-2 text-dark"></i> Información de usuarios
+      </NuxtLink>
+    </li>
 
-    <li class="my-3 col-12 col-md-6">
+    <li class="col-6 col-md-3 my-2 mx-2">
       <NuxtLink to="/date" class="link-item text-start">
         <i class="bi bi-list-ul me-2 text-dark"></i> Fechas y eventos
       </NuxtLink>
     </li>
 
-    <li class="my-3 col-12 col-md-6">
+    <li class="col-6 col-md-3 my-2 mx-2">
       <NuxtLink to="/icons" class="link-item text-start">
         <i class="bi bi-list-ul me-2 text-dark"></i> Iconos
       </NuxtLink>
     </li>
-    <li class="my-3 col-12 col-md-6">
-      <NuxtLink to="/lines" class="link-item text-start">
-        <i class="bi bi-list-ul me-2 text-dark"></i> En linea
+    <li class="col-6 col-md-3 my-2 mx-2">
+      <NuxtLink to="/inline" class="link-item text-start">
+        <i class="bi bi-list-ul me-2 text-dark"></i> En linea (in line)
       </NuxtLink>
     </li>
-    <li class="my-3 col-12 col-md-6">
+    <li class="col-6 col-md-3 my-2 mx-2">
       <NuxtLink to="/list" class="link-item text-start">
         <i class="bi bi-list-ul me-2 text-dark"></i> Listados de eventos
       </NuxtLink>
     </li>
-    <li class="my-3 col-12 col-md-6">
-      <NuxtLink to="/searchpixabay" class="link-item text-start">
-        <i class="bi bi-list-ul me-2 text-dark"></i> Buscar en Pixabay
+    <li class="col-6 col-md-3 my-2 mx-2">
+      <NuxtLink to="/buttons" class="link-item text-start">
+        <i class="bi bi-list-ul me-2 text-dark"></i> Botones
       </NuxtLink>
     </li>
-    <li class="my-3 col-12 col-md-6">
-      <NuxtLink to="/searchvideospixabay" class="link-item text-start">
-        <i class="bi bi-list-ul me-2 text-dark"></i> Buscar vídeos en Pixabay
+    <li class="col-6 col-md-3 my-2 mx-2">
+      <NuxtLink to="/dropdown" class="link-item text-start">
+        <i class="bi bi-list-ul me-2 text-dark"></i> Dropdown
       </NuxtLink>
     </li>
-    <li class="my-3 col-12 col-md-6">
+    <li class="col-6 col-md-3 my-2 mx-2">
+      <NuxtLink to="/tabs" class="link-item text-start">
+        <i class="bi bi-list-ul me-2 text-dark"></i> Pestañas
+      </NuxtLink>
+    </li>
+    <li class="col-6 col-md-3 my-2 mx-2">
+      <NuxtLink to="/modals" class="link-item text-start">
+        <i class="bi bi-list-ul me-2 text-dark"></i> Modales
+      </NuxtLink>
+    </li>
+    <li class="col-6 col-md-3 my-2 mx-2">
       <NuxtLink to="/poster" class="link-item text-start">
         <i class="bi bi-list-ul me-2 text-dark"></i> Mostrar poster
       </NuxtLink>
     </li>
-    <li class="my-3 col-12 col-md-6">
+    <li class="col-6 col-md-3 my-2 mx-2">
+      <NuxtLink to="/cards" class="link-item text-start">
+        <i class="bi bi-list-ul me-2 text-dark"></i> Tarjetas (cards)
+      </NuxtLink>
+    </li>
+    <li class="col-6 col-md-3 my-2 mx-2">
       <NuxtLink to="/textmotion" class="link-item text-start">
         <i class="bi bi-list-ul me-2 text-dark"></i> Texto en movimiento
       </NuxtLink>
     </li>
-    <li class="my-3 col-12 col-md-6">
+    <li class="col-6 col-md-3 my-2 mx-2">
       <NuxtLink to="/ui" class="link-item text-start">
         <i class="bi bi-list-ul me-2 text-dark"></i> Elementos UI
       </NuxtLink>
     </li>
-    <li class="my-3 col-12 col-md-6">
+    <li class="col-6 col-md-3 my-2 mx-2">
       <NuxtLink to="/youtubeid" class="link-item text-start">
         <i class="bi bi-list-ul me-2 text-dark"></i> Mostrar vídeo de Youtube por ID
       </NuxtLink>
     </li>
-    <li class="my-3 col-12 col-md-6">
+    <li class="col-6 col-md-3 my-2 mx-2">
       <NuxtLink to="/youtubeurl" class="link-item text-start">
         <i class="bi bi-list-ul me-2 text-dark"></i> Mostrar vídeo de Youtube por URL
       </NuxtLink>
@@ -175,12 +196,17 @@ Letreros <br>
 </template>
 
 <style scoped>
-/* Estilo para los enlaces con borde y efecto hover */
+
+.menu-list {
+  width: 100%;
+}
+
 .link-item {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.5rem 1rem;
+  width: 100%; /* Asigna el mismo ancho a todos los elementos */
+  padding: 0.5rem;
   border: 2px solid var(--color-primary);
   border-radius: 8px;
   text-decoration: none;
