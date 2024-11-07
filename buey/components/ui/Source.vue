@@ -9,11 +9,19 @@
       <!-- Modal con el código resaltado -->
       <div v-if="showModal" class="modal-overlay" @click.self="toggleModal">
         <div class="modal-content">
+          <!-- Botón de cierre y botón para copiar -->
           <button @click="toggleModal" class="close-button">×</button>
+          <button @click="copyCode" class="copy-button">
+            📋 Copiar
+          </button>
+  
           <!-- Componente de Prism para resaltar el código -->
           <prism language="html">
             <pre>{{ code }}</pre>
           </prism>
+          
+          <!-- Mensaje de éxito al copiar -->
+          <p v-if="copySuccess" class="copy-success">¡Código copiado!</p>
         </div>
       </div>
     </div>
@@ -23,7 +31,7 @@
   import { ref, computed } from 'vue';
   import Prism from 'vue-prism-component';
   import 'prismjs';
-  import 'prismjs/themes/prism.css'; // Importa el tema de prismjs para estilos básicos
+  import 'prismjs/themes/prism.css';
   
   const props = defineProps({
     code: {
@@ -37,10 +45,25 @@
   });
   
   const showModal = ref(false);
+  const copySuccess = ref(false);
   
   // Alternar el estado de visibilidad del modal
   const toggleModal = () => {
     showModal.value = !showModal.value;
+    copySuccess.value = false; // Restablecer el mensaje de éxito al abrir el modal
+  };
+  
+  // Función para copiar el código al portapapeles
+  const copyCode = async () => {
+    try {
+      await navigator.clipboard.writeText(props.code);
+      copySuccess.value = true;
+      setTimeout(() => {
+        copySuccess.value = false;
+      }, 2000); // Ocultar el mensaje de éxito después de 2 segundos
+    } catch (err) {
+      console.error("Error al copiar el código: ", err);
+    }
   };
   
   // Textos en varios idiomas para el botón
@@ -100,6 +123,7 @@
     position: relative;
   }
   
+  /* Estilos del botón de cerrar */
   .close-button {
     position: absolute;
     top: 10px;
@@ -108,6 +132,34 @@
     background: none;
     border: none;
     cursor: pointer;
+  }
+  
+  /* Estilos del botón de copiar */
+  .copy-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .copy-button:hover {
+    background: #0056b3;
+  }
+  
+  /* Mensaje de éxito al copiar */
+  .copy-success {
+    color: green;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    text-align: center;
   }
   </style>
   
