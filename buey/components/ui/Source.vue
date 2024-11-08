@@ -1,8 +1,8 @@
 <template>
-    <div>
+    <div class="source-wrapper">
       <!-- Botón para abrir el modal -->
       <button @click="toggleModal" class="source-button">
-        <span class="code-icon">👨‍💻</span>
+        <i class="bi bi-file-code"></i>
         {{ sourceText }}
       </button>
   
@@ -12,7 +12,7 @@
           <!-- Botón de cierre y botón para copiar -->
           <button @click="toggleModal" class="close-button">×</button>
           <button @click="copyCode" class="copy-button">
-            📋 Copiar
+            <i class="bi bi-copy"></i> &nbsp;&nbsp;&nbsp;Copiar
           </button>
   
           <!-- Componente de Prism para resaltar el código -->
@@ -31,7 +31,7 @@
   import { ref, computed } from 'vue';
   import Prism from 'vue-prism-component';
   import 'prismjs';
-  import 'prismjs/themes/prism.css';
+  import 'prismjs/themes/prism-okaidia.css';
   
   const props = defineProps({
     code: {
@@ -47,26 +47,23 @@
   const showModal = ref(false);
   const copySuccess = ref(false);
   
-  // Alternar el estado de visibilidad del modal
   const toggleModal = () => {
     showModal.value = !showModal.value;
-    copySuccess.value = false; // Restablecer el mensaje de éxito al abrir el modal
+    copySuccess.value = false;
   };
   
-  // Función para copiar el código al portapapeles
   const copyCode = async () => {
     try {
       await navigator.clipboard.writeText(props.code);
       copySuccess.value = true;
       setTimeout(() => {
         copySuccess.value = false;
-      }, 2000); // Ocultar el mensaje de éxito después de 2 segundos
+      }, 2000);
     } catch (err) {
       console.error("Error al copiar el código: ", err);
     }
   };
   
-  // Textos en varios idiomas para el botón
   const sourceTexts = {
     en: "Source code",
     es: "Código fuente",
@@ -80,7 +77,11 @@
   </script>
   
   <style scoped>
-  /* Estilos del botón */
+  .source-wrapper {
+    display: inline-flex;
+    align-items: center;
+  }
+  
   .source-button {
     display: inline-flex;
     align-items: center;
@@ -99,7 +100,6 @@
     transform: scale(1.2);
   }
   
-  /* Estilos del modal */
   .modal-overlay {
     position: fixed;
     top: 0;
@@ -117,29 +117,27 @@
     background: white;
     padding: 1.5rem;
     border-radius: 8px;
-    max-width: 90%;
+    max-width: 50%;
     max-height: 80%;
     overflow-y: auto;
     position: relative;
   }
   
-  /* Estilos del botón de cerrar */
   .close-button {
     position: absolute;
-    top: 10px;
+    top: 0px;
     right: 10px;
-    font-size: 1.2rem;
+    font-size: 2.2rem;
     background: none;
     border: none;
     cursor: pointer;
   }
   
-  /* Estilos del botón de copiar */
   .copy-button {
     position: absolute;
     top: 10px;
-    left: 10px;
-    background: #007bff;
+    right: 50px;
+    background: #1f1f1f;
     color: white;
     border: none;
     border-radius: 4px;
@@ -154,7 +152,6 @@
     background: #0056b3;
   }
   
-  /* Mensaje de éxito al copiar */
   .copy-success {
     color: green;
     font-size: 0.9rem;
